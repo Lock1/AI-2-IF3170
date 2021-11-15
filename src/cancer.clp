@@ -13,14 +13,14 @@
     (if (<= ?x 0.05)
         then
         (assert (worst-radius))
-        (assert (branch-kiri))     
+        (assert (branch-kiri))
         else
         (assert (worst-perimeter))
         (assert (branch-kanan))
     )
 )
 
-(defrule tanya-mean-radius 
+(defrule tanya-mean-radius
     (mean-radius)
 =>
     (printout t "mean_radius? ")
@@ -41,7 +41,7 @@
     (if (<= ?x 16.83)
         then
         (assert (radius-error))
-        (assert (texture-kiri)) 
+        (assert (texture-kiri))
         else
         (assert (mean-texture))
         (assert (texture-kanan))
@@ -54,7 +54,7 @@
 =>
     (if (<= ?x 16.19)
         then
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
         else
         (assert (concave-point-error))
@@ -66,10 +66,10 @@
 =>
     (if (<= ?x 0.01)
         then
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
         else
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -90,10 +90,10 @@
 =>
     (if (<= ?x 0.09)
         then
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
         else
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -104,7 +104,7 @@
 =>
     (if (<= ?x 30.15)
         then
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
         else
         (assert (worst-area))
@@ -116,7 +116,7 @@
 =>
     (if (<= ?x 641.60)
         then
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
         else
         (assert (mean-radius))
@@ -131,7 +131,7 @@
         then
         (assert (mean-texture))
         else
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -142,10 +142,10 @@
 =>
     (if (<= ?x 28.79)
         then
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
         else
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -207,7 +207,7 @@
         then
         (assert (worst-texture))
         else
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -229,10 +229,10 @@
 =>
     (if (> ?x 0.17)
         then
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
         else
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
@@ -242,7 +242,7 @@
 =>
     (if (> ?x 1.56)
         then
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
         else
         (assert (mean-radius))
@@ -255,10 +255,10 @@
 =>
     (if (> ?x 13.34)
         then
-        (printout t "1.0" crlf)
+        (printout t "Hasil Prediksi = Terprediksi Kanker Payudara" crlf)
         (halt)
         else
-        (printout t "0.0" crlf)
+        (printout t "Hasil Prediksi = Tidak Terprediksi Kanker Payudara" crlf)
         (halt)
     )
 )
